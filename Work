@@ -1,0 +1,146 @@
+Roll number:202512062
+Kigali independent university 
+Assignment of datastructure and algorithms using c++
+Q1. Create Program  that will take the name  user and say congratulations the names of user using single function 
+
+#include <iostream>
+using namespace std;
+void welcomeUser(string name) {
+    cout << “congratulations 👏🏽" << name << "!" << endl;
+}
+
+int main() {
+    string name;
+
+    
+    cout << "Enter your name: ";
+    cin >> name;
+
+    welcomeUser(name);
+
+    return 0;
+}
+
+Q2 create function that add 4 float number 
+
+#include <iostream>
+Using namespace std;
+Float addNumbers(float a, float b, float c, float d) {
+    Return a + b + c + d;
+}
+
+Int main() {
+    Float num1, num2, num3, num4;
+    Cout << “Enter 4 float numbers: “;
+    Cin >> num1 >> num2 >> num3 >> num4;
+    Float sum = addNumbers(num1, num2, num3, num4);
+    Cout << “Sum = “ << sum << endl;
+
+    Return 0;
+}
+Q3 Create function  that compute Fibonacci series using recursion
+#include <iostream>
+Using namespace std;
+Int fibonacci(int n) {
+    If (n == 0)
+        Return 0;
+    Else if (n == 1)
+        Return 1;
+    Else
+        Return fibonacci(n – 1) + fibonacci(n – 2);
+}
+
+Int main() {
+    Int n;
+
+    Cout << “Enter number of terms: “;
+    Cin >> n;
+
+    Cout << “Fibonacci Series: “;
+
+    For (int I = 0; I < n; i++) {
+        Cout << fibonacci(i) << “ “;
+    }
+
+    Return 0;
+}
+Q4 What are two types of function how do we implement
+There are two main types of functions in C++:
+1.	Library (Built-in) Functions
+These are predefined functions provided by C++ libraries.
+Examples:
+Sqrt() → square root
+Pow() → power
+Strlen() → string length
+Example
+C++
+#include <iostream>
+#include <cmath>
+Using namespace std;
+
+Int main() {
+    Cout << sqrt(25);
+    Return 0;
+}
+2 User-Defined Functions
+These are functions created by the programmer.
+Steps to Implement User-Defined Function
+Function declaration (prototype)
+Function definition
+Function call
+Example
+C++
+#include <iostream>
+Using namespace std;
+
+Int add(int a, int b);
+Int main() {
+    Int result;
+    Result = add(5, 3);
+
+    Cout << “Sum = “ << result;
+
+    Return 0;
+}
+Int add(int a, int b) {
+    Return a + b;
+}
+Question 5  Can void function  take parameter
+
+AVoid function just means the function does not return a value, but it can still receive input through parameters.
+Example in C++:
+C++
+#include <iostream>
+Using namespace std;
+Void greet(string name) {   // function takes a parameter
+    Cout << “Welcome “ << name << endl;
+}
+Int main() {
+    Greet(“Alice”);  // passing argument
+    Return 0;
+}
+Q6  What is recursive Algorithms provide example using factorial implementation
+
+Arecursive algorithm is a method where a function solves a problem by calling itself with smaller versions of the same problem until it reaches a base case (a stopping condition).
+
+#include <iostream>
+Using namespace std;
+Int factorial(int n) {
+    // Base case
+    If (n == 0 || n == 1) {
+        Return 1;
+    }
+    Return n * factorial(n – 1);
+}
+
+Int main() {
+    Int num;
+
+    Cout << “Enter a number: “;
+    Cin >> num;
+    Cout << “Factorial of “ << num << “ is “ << factorial(num) << endl;
+
+    Return 0;
+}
+
+
